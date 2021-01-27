@@ -3,11 +3,30 @@
 }
 
 body {
+   max-width: auto;
+   max-height: auto;
    font-family: "Sofia", sans-serif;
-   font-size: 15px;
-   text-shadow: 3px 3px 3px #ababab;
-   background-color: skyblue;
- }
+   background-color: blueviolet;
+}
+
+@media (max-width: 800px) {
+   body {
+      font-family: "Sofia", sans-serif;
+      font-size: 15px;
+      text-shadow: 3px 3px 3px #ababab;
+      background-color: skyblue;
+   }
+}
+
+@media (max-width: 500px) {
+   body {
+      font-family: "Sofia", sans-serif;
+      font-size: 10px;
+      text-shadow: 3px 3px 3px #ababab;
+      background-color: rgb(64, 235, 115);
+   }
+}
+
 
 .container {
    display: flex-start;
@@ -63,7 +82,6 @@ ul {
   header {
     display: flex;
     flex-wrap: wrap;
-    height: 300px;
     overflow: hidden;
   }
 
@@ -76,8 +94,9 @@ ul {
     
  }
 
- #headerText {
-    display: flex;
+ span#headerText {
+    display: inline-flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-items: flex-end;
     padding-left: 50px;
@@ -133,74 +152,70 @@ width:106px;
 	top:1px;
 }
 
-#topGalleryContainer {
+#topGalleryContainer, #bottomGalleryContainer {
    display: flex;
+   flex-flow: row wrap;
    justify-content: space-evenly;
    flex-wrap: nowrap;
 }
 
-.topProjectGalleryImages {
+.topProjectGalleryImages, .bottomProjectGalleryImages {
    display: flex;
-   justify-content: space-evenly;
-   flex-wrap: nowrap;
-   padding: 10px;
+   justify-content: flex-start;
+   flex-wrap: wrap;
 }
 
-#topProjectGalleryCaptions {
+.topProjectGalleryCaptions, .bottomProjectGalleryCaptions {
    display: flex;
-   flex-direction: row;
-}
-
-.caption {
-   padding: 0 125px 0 125px;
-   display: inline-flex;
+   flex-basis: 99%;
+   flex-flow: row wrap;
+   text-align: center;
+   align-items: flex-start;
    justify-content: space-evenly;
 }
 
-
-#bottomGalleryContainer {
-   display: flex;
-   justify-content: space-between;
-}
-
-.bottomProjectGalleryImages {
-   display: flex;
+div.caption {
+   display: block;
+   text-align: center;
    justify-content: space-evenly;
-   padding: 10px;
-}
-
-#bottomProjectGalleryCaptions {
-   display: flex;
-   flex-direction: row;
-   padding-bottom: 50px;
-}
-
-.caption {
-   padding: 0 125px 0 125px;
-   display: inline-flex;
-   justify-content: space-evenly;
+   padding: 2% 0 5% 0;
 }
 
 h3 {
    text-align: center;
-   padding-top: 25px;
    color:greenyellow;
+   width: 100%;
 }
 
 footer {
    display: flex;
-   align-items: center;
-   justify-content: center;
+   flex-flow: row wrap;
+   text-align: center;
+   justify-content: space-evenly;
 }
 
 #footer {
+   display: flex;
+   flex-flow: row wrap;
+   text-align: center;
+   justify-content: space-evenly;
    background-color: midnightblue;
+   max-height: auto;
+   max-width: 100%;
 }
 
 #footerButton {
    display: flex;
-   align-items: center;
-   justify-content: center;
+   flex-flow: row wrap;
+   text-align: center;
+   justify-content: space-evenly;
    padding-top: 5px;
    padding-bottom: 50px;
+}
+
+#footerButtonBottom {
+   display: flex;
+   flex-flow: row wrap;
+   text-align: center;
+   justify-content: space-evenly;
 }
