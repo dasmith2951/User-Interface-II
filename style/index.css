@@ -230,6 +230,10 @@ footer {
    .li1, .li2, .li3 {
       border-bottom: 2px dashed red;
    }
+
+   .projectButton {
+      border: 2px dashed red;
+   }
 }
 
 @media (max-width: 500px) {
@@ -258,5 +262,9 @@ footer {
 
    .li1, .li2, .li3 {
       border-bottom: 2px dashed dodgerblue;
+   }
+
+   .projectButton {
+      border: 2px dashed darkcyan;
    }
 }
