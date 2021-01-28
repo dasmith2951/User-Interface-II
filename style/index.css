@@ -9,49 +9,6 @@ body {
    background-color: blueviolet;
 }
 
-@media (max-width: 100%)  {
-   * {
-      display: flex;
-      flex-flow: column wrap;
-      flex-wrap: wrap;
-      background-color: blueviolet !important;
-      max-width: 100%;
-      max-height: auto;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-   }
-}
-
-@media (max-width: 800px)  {
-   * {
-      display: flex;
-      flex-flow: column wrap;
-      flex-wrap: wrap;
-      background-color: cadetblue !important;
-      max-width: 100%;
-      max-height: auto;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-   }
-}
-
-@media (max-width: 500px) {
-   * {
-      display: flex;
-      flex-flow: column wrap;
-      flex-wrap: wrap;
-      background-color: palevioletred !important;
-      max-width: 100%;
-      max-height: auto;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-   }
-}
-
-
 .container {
    display: flex-start;
    flex-wrap: wrap;
@@ -242,4 +199,54 @@ footer {
    flex-flow: row wrap;
    text-align: center;
    justify-content: space-evenly;
+}
+
+@media (max-width: 100%)  {
+   * {
+      display: flex;
+      flex-flow: column wrap;
+      flex-wrap: wrap;
+      background-color: blueviolet !important;
+      max-width: 100%;
+      max-height: auto;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+   }
+}
+
+@media (max-width: 800px)  {
+   * {
+      display: flex;
+      flex-flow: column wrap;
+      flex-wrap: wrap;
+      background-color: cadetblue !important;
+      max-width: 100%;
+      max-height: auto;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+   }
+
+   li a {
+      padding: initial;
+   }
+}
+
+@media (max-width: 500px) {
+   * {
+      display: flex;
+      flex-flow: column wrap;
+      flex-wrap: wrap;
+      background-color: palevioletred !important;
+      max-width: 100%;
+      max-height: auto;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+   }
+   
+   li a {
+      padding: initial;
+   }
 }
