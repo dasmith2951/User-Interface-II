@@ -233,13 +233,14 @@ footer {
       border: 2px dashed red;
    }
 
-   .navigation a {
+   .li1, .li2, .li3 {
       border-bottom: 2px dashed red;
-}
+   }
 
 @media (max-width: 500px) {
    * {
       display: flex;
+      font-size: 10px;
       flex-flow: column wrap;
       flex-wrap: wrap;
       background-color: palevioletred !important;
@@ -250,7 +251,16 @@ footer {
       text-align: center;
    }
 
-   li a {
+   .heading {
+      color: darkblue;
+   }
+   
+   .navigation  {
       padding: initial;
+      border: 2px dashed dodgerblue;
+   }
+
+   .li1, .li2, .li3 {
+      border-bottom: 2px dashed dodgerblue;
    }
 }
