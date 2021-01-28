@@ -228,9 +228,13 @@ footer {
       text-align: center;
    }
 
-   li a {
+   .navigation  {
       padding: initial;
+      border: 2px dashed red;
    }
+
+   .navigation a {
+      border-bottom: 2px dashed red;
 }
 
 @media (max-width: 500px) {
@@ -245,7 +249,7 @@ footer {
       justify-content: center;
       text-align: center;
    }
-   
+
    li a {
       padding: initial;
    }
