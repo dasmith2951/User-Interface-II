@@ -87,11 +87,6 @@ h2 {
 }
 
 .projectButton {
-	-moz-box-shadow:     ;
-	-webkit-box-shadow:     ;
-	box-shadow:     ;
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #44c767), color-stop(1, #5cbf2a) );
-	background:-moz-linear-gradient( center top, #44c767 5%, #5cbf2a 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#44c767', endColorstr='#5cbf2a');
 	background-color:#44c767;
 	-webkit-border-top-left-radius:18px;
@@ -122,7 +117,6 @@ h2 {
 }
 
 .projectButton:hover {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #5cbf2a), color-stop(1, #44c767) );
 	background:-moz-linear-gradient( center top, #5cbf2a 5%, #44c767 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cbf2a', endColorstr='#44c767');
 	background-color:#5cbf2a;
