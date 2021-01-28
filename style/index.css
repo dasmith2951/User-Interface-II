@@ -9,21 +9,45 @@ body {
    background-color: blueviolet;
 }
 
-@media (max-width: 800px) {
-   body {
-      font-family: "Sofia", sans-serif;
-      font-size: 15px;
-      text-shadow: 3px 3px 3px #ababab;
-      background-color: skyblue;
+@media (max-width: 100%)  {
+   * {
+      display: flex;
+      flex-flow: column wrap;
+      flex-wrap: wrap;
+      background-color: blueviolet !important;
+      max-width: 100%;
+      max-height: auto;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+   }
+}
+
+@media (max-width: 800px)  {
+   * {
+      display: flex;
+      flex-flow: column wrap;
+      flex-wrap: wrap;
+      background-color: cadetblue !important;
+      max-width: 100%;
+      max-height: auto;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
    }
 }
 
 @media (max-width: 500px) {
-   body {
-      font-family: "Sofia", sans-serif;
-      font-size: 10px;
-      text-shadow: 3px 3px 3px #ababab;
-      background-color: rgb(64, 235, 115);
+   * {
+      display: flex;
+      flex-flow: column wrap;
+      flex-wrap: wrap;
+      background-color: palevioletred !important;
+      max-width: 100%;
+      max-height: auto;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
    }
 }
 
@@ -40,67 +64,65 @@ body {
 }
 
 .navigation {
- display: flex-start;
- flex-wrap: wrap;
- background-color: midnightblue;
- padding-left: 50px;
- padding-bottom: 15px;
+   display: flex;
+   background-color: midnightblue;
 }
 
 nav {
-    justify-items: flex-start;
-    display: inline-flex;
-    text-align: center;
-    flex-wrap: wrap;
+   display: flex;
+   justify-items: flex-start;
+   text-align: center;
+   flex-flow: column wrap;
+   padding-left: 1.7%;
+}
+  
+ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: #666;
+}
+    
+li {
+   float: left;
+}
+    
+li a {
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+}
+  
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+   background-color: #111;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #666;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: #111;
-  }
+header {
+   display: flex;
+   flex-wrap: wrap;
+   overflow: hidden;
+}
 
-  header {
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
-  }
-
- #headerImage {
-    display: inline-flex;
-    flex-wrap: wrap;
-    max-width: 500px;
-    max-height: 500px;
-    padding-left: 25px;
+#headerImage {
+   display: inline-flex;
+   flex-wrap: wrap;
+   max-width: 500px;
+   max-height: 500px;
+   padding-left: 25px;
     
- }
+}
 
- span#headerText {
-    display: inline-flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-items: flex-end;
-    padding-left: 50px;
- }
+span#headerText {
+   display: inline-flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   justify-items: flex-end;
+   padding-left: 50px;
+}
 
 h2 {
    text-align: start;
@@ -127,20 +149,22 @@ h2 {
 	-webkit-border-bottom-left-radius:18px;
 	-moz-border-radius-bottomleft:18px;
 	border-bottom-left-radius:18px;
-text-indent:0;
+  text-indent:0;
 	display:inline-block;
 	color:#ffffff;
 	font-family:Arial Black;
 	font-size:15px;
 	font-weight:bold;
 	font-style:italic;
-height:39px;
+ height:39px;
 	line-height:39px;
-width:106px;
+ width:106px;
 	text-decoration:none;
 	text-align:center;
 	text-shadow:1px 1px 0px #2f6627;
-}.projectButton:hover {
+}
+
+.projectButton:hover {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #5cbf2a), color-stop(1, #44c767) );
 	background:-moz-linear-gradient( center top, #5cbf2a 5%, #44c767 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cbf2a', endColorstr='#44c767');
